@@ -3,44 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Principal</title>
+    <title>Catálogos de Productos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
             text-align: center;
-            padding: 20px;
+            padding: 50px;
         }
-        .brand-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 50px;
-        }
-        .brand-button {
+        
+        .catalog-btn {
             background-color: #003399;
             color: white;
-            padding: 15px 30px;
             font-size: 1.2em;
-            text-decoration: none;
+            padding: 15px 30px;
+            margin: 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
             transition: background-color 0.3s;
         }
-        .brand-button:hover {
-            background-color: #0056cc;
+
+        .catalog-btn:hover {
+            background-color: #FF6600;
+        }
+
+        h1 {
+            color: #003399;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenido al Catálogo</h1>
-    <p>Selecciona una marca para ver su catálogo:</p>
+    <h1>Bienvenidos a los Catálogos de Productos</h1>
+    <p class="description">Elija el catálogo que desea consultar:</p>
     
-    <div class="brand-buttons">
-        <a href="marca1.html" class="brand-button">Marca 1</a>
-        <a href="marca2.html" class="brand-button">Marca 2</a>
-        <a href="marca3.html" class="brand-button">Marca 3</a>
+    <div class="buttons-container">
+        <!-- Botones que redirigen a los catálogos -->
+        <a href="catalogo_total.html" class="catalog-btn">Catálogo TOTAL</a>
+        <a href="catalogo_wadfow.html" class="catalog-btn">Catálogo WADFOW</a>
+        <a href="catalogo_noble.html" class="catalog-btn">Catálogo NOBLE</a>
     </div>
+
+    <footer style="margin-top: 50px;">
+        <p>&copy; 2024 Mi Empresa | <a href="https://www.miempresa.com" target="_blank">Visita nuestro sitio web</a></p>
+    </footer>
 </body>
 </html>
+
+
