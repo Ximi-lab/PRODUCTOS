@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .brand-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .brand-button {
+            background-color: #003399;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .brand-button:hover {
+            background-color: #0056cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Catálogo</h1>
+    <p>Selecciona una marca para ver su catálogo:</p>
+    
+    <div class="brand-buttons">
+        <a href="marca1.html" class="brand-button">Marca 1</a>
+        <a href="marca2.html" class="brand-button">Marca 2</a>
+        <a href="marca3.html" class="brand-button">Marca 3</a>
+    </div>
+</body>
+</html>
